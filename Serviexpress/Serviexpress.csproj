@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D10BA23E-A955-4C82-859D-908588ADA327}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Serviexpress</RootNamespace>
+    <AssemblyName>Serviexpress</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ControlzEx, Version=4.0.0.0, Culture=neutral, PublicKeyToken=69f1c32f803d307e, processorArchitecture=MSIL">
+      <HintPath>..\packages\ControlzEx.4.4.0\lib\net462\ControlzEx.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=2.0.0.0, Culture=neutral, PublicKeyToken=51482d6f650b2b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.2.4.5\lib\net47\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.19\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Vistas\Administrador\Administracion.xaml.cs">
+      <DependentUpon>Administracion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\Administrador.xaml.cs">
+      <DependentUpon>Administrador.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\AdmOrdenes.xaml.cs">
+      <DependentUpon>AdmOrdenes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\AdmProductos.xaml.cs">
+      <DependentUpon>AdmProductos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\AdmReportes.xaml.cs">
+      <DependentUpon>AdmReportes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\AdmUsuarios.xaml.cs">
+      <DependentUpon>AdmUsuarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\agregarUsuarios.xaml.cs">
+      <DependentUpon>agregarUsuarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\eliminarUsuarios.xaml.cs">
+      <DependentUpon>eliminarUsuarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Administrador\modificarUsuarios.xaml.cs">
+      <DependentUpon>modificarUsuarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\DetPedidoProducto\AdmDetPedidoProducto.xaml.cs">
+      <DependentUpon>AdmDetPedidoProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\DetPedidoProducto\agregarDetPedidoProducto.xaml.cs">
+      <DependentUpon>agregarDetPedidoProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\DetPedidoProducto\eliminarDetPedidoProducto.xaml.cs">
+      <DependentUpon>eliminarDetPedidoProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\DetPedidoProducto\modificarDetPedidoProducto.xaml.cs">
+      <DependentUpon>modificarDetPedidoProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\DProductoServicio\AdmDProductoServicio.xaml.cs">
+      <DependentUpon>AdmDProductoServicio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\DProductoServicio\agregarDProductoServicio.xaml.cs">
+      <DependentUpon>agregarDProductoServicio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\DProductoServicio\eliminarDProductoServicio.xaml.cs">
+      <DependentUpon>eliminarDProductoServicio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\DProductoServicio\modificarDProductoServicio.xaml.cs">
+      <DependentUpon>modificarDProductoServicio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Empleado\Empleado.xaml.cs">
+      <DependentUpon>Empleado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\OrdenDeCompra\AdmOrdenDeCompra.xaml.cs">
+      <DependentUpon>AdmOrdenDeCompra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\OrdenDeCompra\agregarOrdenDeCompra.xaml.cs">
+      <DependentUpon>agregarOrdenDeCompra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\OrdenDeCompra\eliminarOrdenDeCompra.xaml.cs">
+      <DependentUpon>eliminarOrdenDeCompra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\OrdenDeCompra\modificarOrdenDeCompra.xaml.cs">
+      <DependentUpon>modificarOrdenDeCompra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Producto\AdmProducto.xaml.cs">
+      <DependentUpon>AdmProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Producto\agregarProducto.xaml.cs">
+      <DependentUpon>agregarProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Producto\eliminarProducto.xaml.cs">
+      <DependentUpon>eliminarProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Producto\modificarProducto.xaml.cs">
+      <DependentUpon>modificarProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Proveedor\admProveedor.xaml.cs">
+      <DependentUpon>admProveedor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Proveedor\agregarProveedor.xaml.cs">
+      <DependentUpon>agregarProveedor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Proveedor\eliminarProveedor.xaml.cs">
+      <DependentUpon>eliminarProveedor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Proveedor\modificarProveedor.xaml.cs">
+      <DependentUpon>modificarProveedor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\RecepcionProducto\AdmRecepcionProducto.xaml.cs">
+      <DependentUpon>AdmRecepcionProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\RecepcionProducto\agregarRecepcionProducto.xaml.cs">
+      <DependentUpon>agregarRecepcionProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\RecepcionProducto\eliminarRecepcionProducto.xaml.cs">
+      <DependentUpon>eliminarRecepcionProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\RecepcionProducto\modificarRecepcionProducto.xaml.cs">
+      <DependentUpon>modificarRecepcionProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\ReservaHora\AdmReservaHora.xaml.cs">
+      <DependentUpon>AdmReservaHora.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Servicios\AdmServicios.xaml.cs">
+      <DependentUpon>AdmServicios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Servicios\agregarServicios.xaml.cs">
+      <DependentUpon>agregarServicios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Servicios\eliminarServicios.xaml.cs">
+      <DependentUpon>eliminarServicios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Servicios\modificarServicios.xaml.cs">
+      <DependentUpon>modificarServicios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TipoProducto\AdmTipoProducto.xaml.cs">
+      <DependentUpon>AdmTipoProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TipoProducto\agregarTipoProducto.xaml.cs">
+      <DependentUpon>agregarTipoProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TipoProducto\eliminarTipoProducto.xaml.cs">
+      <DependentUpon>eliminarTipoProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TipoProducto\modificarTipoProducto.xaml.cs">
+      <DependentUpon>modificarTipoProducto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TipoRubro\AdmTipoRubro.xaml.cs">
+      <DependentUpon>AdmTipoRubro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TipoRubro\eliminarTipoRubro.xaml.cs">
+      <DependentUpon>eliminarTipoRubro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TipoRubro\modificarTipoRubro.xaml.cs">
+      <DependentUpon>modificarTipoRubro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TipoServicio\AdmTipoServicio.xaml.cs">
+      <DependentUpon>AdmTipoServicio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TipoServicio\agregarTipoServicio.xaml.cs">
+      <DependentUpon>agregarTipoServicio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TipoServicio\eliminarTipoServicio.xaml.cs">
+      <DependentUpon>eliminarTipoServicio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TipoServicio\modificarTipoServicio.xaml.cs">
+      <DependentUpon>modificarTipoServicio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TipoUsuario\AdmTipoUsuarios.xaml.cs">
+      <DependentUpon>AdmTipoUsuarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TipoUsuario\eliminarTipoUsuarios.xaml.cs">
+      <DependentUpon>eliminarTipoUsuarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\TipoUsuario\modificarTipoUsuarios.xaml.cs">
+      <DependentUpon>modificarTipoUsuarios.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Vistas\Administrador\Administracion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\Administrador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\AdmOrdenes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\AdmProductos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\AdmReportes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\AdmUsuarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\agregarUsuarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\eliminarUsuarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Administrador\modificarUsuarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\DetPedidoProducto\AdmDetPedidoProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\DetPedidoProducto\agregarDetPedidoProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\DetPedidoProducto\eliminarDetPedidoProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\DetPedidoProducto\modificarDetPedidoProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\DProductoServicio\AdmDProductoServicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\DProductoServicio\agregarDProductoServicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\DProductoServicio\eliminarDProductoServicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\DProductoServicio\modificarDProductoServicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Empleado\Empleado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\OrdenDeCompra\AdmOrdenDeCompra.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\OrdenDeCompra\agregarOrdenDeCompra.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\OrdenDeCompra\eliminarOrdenDeCompra.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\OrdenDeCompra\modificarOrdenDeCompra.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Producto\AdmProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Producto\agregarProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Producto\eliminarProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Producto\modificarProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Proveedor\admProveedor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Proveedor\agregarProveedor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Proveedor\eliminarProveedor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Proveedor\modificarProveedor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\RecepcionProducto\AdmRecepcionProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\RecepcionProducto\agregarRecepcionProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\RecepcionProducto\eliminarRecepcionProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\RecepcionProducto\modificarRecepcionProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\ReservaHora\AdmReservaHora.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Servicios\AdmServicios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Servicios\agregarServicios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Servicios\eliminarServicios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\Servicios\modificarServicios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\TipoProducto\AdmTipoProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\TipoProducto\agregarTipoProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\TipoProducto\eliminarTipoProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\TipoProducto\modificarTipoProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\TipoRubro\AdmTipoRubro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\TipoRubro\eliminarTipoRubro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\TipoRubro\modificarTipoRubro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\TipoServicio\AdmTipoServicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\TipoServicio\agregarTipoServicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\TipoServicio\eliminarTipoServicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\TipoServicio\modificarTipoServicio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\TipoUsuario\AdmTipoUsuarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\TipoUsuario\eliminarTipoUsuarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Vistas\TipoUsuario\modificarTipoUsuarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos_Serviexpress\Datos_Serviexpress.csproj">
+      <Project>{4eb9537b-3ca7-42a0-9704-849e362b60fe}</Project>
+      <Name>Datos_Serviexpress</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades_Serviexpress\Entidades_Serviexpress.csproj">
+      <Project>{2c804ee0-75fb-4d57-849b-ad94f2c57663}</Project>
+      <Name>Entidades_Serviexpress</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio_Serviexpress\Negocio_Serviexpress.csproj">
+      <Project>{dca2342d-7619-48c1-b08a-0e90dc61370f}</Project>
+      <Name>Negocio_Serviexpress</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\adm_ordenes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\adm_productos.png" />
+    <Resource Include="Imagenes\adm_report.png" />
+    <Resource Include="Imagenes\adm_usuarios.png" />
+    <Resource Include="Imagenes\login1.png" />
+    <Resource Include="Imagenes\login2.png" />
+    <Resource Include="Imagenes\logo_serviexpress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\Recepcion_productos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\generar_boleta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\reserva_hora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\cerrar_sesion.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

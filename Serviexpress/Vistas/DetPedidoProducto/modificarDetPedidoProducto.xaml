@@ -1,0 +1,25 @@
+﻿<mah:MetroWindow x:Class="Serviexpress.Vistas.DetPedidoProducto.modificarDetPedidoProducto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Serviexpress.Vistas.DetPedidoProducto"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="modificarDetPedidoProducto" Height="450" Width="402.5">
+    <Grid>
+        <Label x:Name="lblEditarDetPedidoProducto" Content="Editar Detalle &#xA;Pedido de Producto" HorizontalAlignment="Left" Margin="59,34,0,0" VerticalAlignment="Top" Width="303" Height="92" FontSize="30" FontStyle="Italic" FontWeight="SemiBold"/>
+        <Label x:Name="lblEditarCantidad" Content="Cantidad" HorizontalAlignment="Left" Margin="61,192,0,0" VerticalAlignment="Top" Width="133"/>
+        <Label x:Name="lblEditarIDOrdenCompra" Content="ID Orden de Compra" HorizontalAlignment="Left" Margin="61,232,0,0" VerticalAlignment="Top" Width="133"/>
+        <Label x:Name="lblEditarIDProducto" Content="ID de Producto" HorizontalAlignment="Left" Margin="61,273,0,0" VerticalAlignment="Top" Width="133"/>
+        <TextBox x:Name="txtEditarCantidad" HorizontalAlignment="Left" Height="26" Margin="242,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cmbEditarIDOrdenCompra" HorizontalAlignment="Left" Margin="242,232,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <ComboBox x:Name="cmbEditarIDProducto" HorizontalAlignment="Left" Margin="242,273,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Button x:Name="btnEditarDetPedidoProducto" Content="Editar" HorizontalAlignment="Left" Margin="287,335,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="btnEditarDetPedidoProducto_Click"/>
+        <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="197,335,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="btnSalir_Click"/>
+        <Label x:Name="lblEditarIDDetPedidoProducto" Content="ID" HorizontalAlignment="Left" Margin="61,153,0,0" VerticalAlignment="Top" Width="133"/>
+        <TextBox x:Name="txtEditarIDDetPedidoProducto" HorizontalAlignment="Left" Height="26" Margin="242,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</mah:MetroWindow>

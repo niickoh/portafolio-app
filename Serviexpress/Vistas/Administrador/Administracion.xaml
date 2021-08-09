@@ -1,0 +1,36 @@
+﻿<mah:MetroWindow x:Class="Serviexpress.Vistas.Administrador.Administracion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Serviexpress.Vistas.Administrador"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Administracion" Height="448.975" Width="637">
+    <Grid>
+
+        <mah:Tile x:Name="tlUsuarios" Content="" HorizontalAlignment="Left" Margin="77,80,0,0" VerticalAlignment="Top" Height="75" Width="75" Background="#FFF56B39" Title="Usuarios" TitleFontSize="14" HorizontalTitleAlignment="Center" VerticalTitleAlignment="Center" FontStyle="Italic" Click="tlUsuarios_Click"/>
+        <mah:Tile x:Name="tlTipoUsuarios" Content="" HorizontalAlignment="Left" Margin="77,160,0,0" VerticalAlignment="Top" Height="75" Width="75" Background="#FFF56B39" Title="Tipo Usuarios" TitleFontSize="14" HorizontalTitleAlignment="Center" VerticalTitleAlignment="Center" FontStyle="Italic" Click="tlTipoUsuarios_Click"/>
+        <mah:Tile x:Name="tlProducto" Content="" HorizontalAlignment="Left" Margin="77,240,0,0" VerticalAlignment="Top" Height="75" Width="75" Background="#FFF56B39" Title="Productos" TitleFontSize="13" HorizontalTitleAlignment="Center" VerticalTitleAlignment="Center" FontStyle="Italic" Click="tlProducto_Click"/>
+        <mah:Tile x:Name="lblOrdenCompra" Content="" HorizontalAlignment="Left" Margin="157,80,0,0" VerticalAlignment="Top" Height="75" Width="75" Background="#FFF56B39" Title="Orden de Compra" TitleFontSize="14" HorizontalTitleAlignment="Center" VerticalTitleAlignment="Center" Click="lblOrdenCompra_Click" FontStyle="Italic"/>
+        <mah:Tile x:Name="tlRecepcion" Content="" HorizontalAlignment="Left" Margin="157,160,0,0" VerticalAlignment="Top" Height="75" Width="75" Background="#FFF56B39" Title="Recepcion de Productos" VerticalTitleAlignment="Center" FontStyle="Italic" Click="tlRecepcion_Click" TitleFontSize="14"/>
+        <mah:Tile x:Name="tlTipoProducto" Content="" HorizontalAlignment="Left" Margin="157,240,0,0" VerticalAlignment="Top" Height="75" Width="75" Background="#FFF56B39" Title="Tipo de Productos" Click="tlTipoProducto_Click" TitleFontSize="13" FontStyle="Italic" HorizontalTitleAlignment="Center" VerticalTitleAlignment="Center"/>
+        <mah:Tile x:Name="tlClientes" Content="" HorizontalAlignment="Left" Margin="237,80,0,0" VerticalAlignment="Top" Height="75" Width="75" Background="#FFF56B39" Title="Clientes" HorizontalTitleAlignment="Center" VerticalTitleAlignment="Center" FontStyle="Italic"/>
+        <mah:Tile x:Name="tlTipoServicio" Content="" HorizontalAlignment="Left" Margin="237,160,0,0" VerticalAlignment="Top" Height="75" Width="75" Background="#FFF56B39" Title="Tipo de Servicio" Click="tlTipoServicio_Click" TitleFontSize="14" FontStyle="Italic" VerticalTitleAlignment="Center" HorizontalTitleAlignment="Center"/>
+        <mah:Tile x:Name="tlServicios" Content="" HorizontalAlignment="Left" Margin="237,240,0,0" VerticalAlignment="Top" Height="75" Width="75" Background="#FFF56B39" Title="Servicios" TitleFontSize="14" Click="tlServicios_Click" HorizontalTitleAlignment="Center" VerticalTitleAlignment="Center" FontStyle="Italic"/>
+        <mah:Tile x:Name="tlProveedor" Content="" HorizontalAlignment="Left" Margin="317,80,0,0" VerticalAlignment="Top" Height="75" Width="75" Background="#FFF56B39" Title="Proveedor" TitleFontSize="13" HorizontalTitleAlignment="Center" VerticalTitleAlignment="Center" FontStyle="Italic" Click="tlProveedor_Click"/>
+        <mah:Tile x:Name="tlBoleta" Content="" HorizontalAlignment="Left" Margin="317,160,0,0" VerticalAlignment="Top" Height="75" Width="75" Background="#FFF56B39" Title="Boleta" HorizontalTitleAlignment="Center" VerticalTitleAlignment="Center" TitleFontSize="14" FontStyle="Italic"/>
+        <mah:Tile x:Name="tlFactura" Content="" HorizontalAlignment="Left" Margin="317,240,0,0" VerticalAlignment="Top" Height="75" Width="75" Background="#FFF56B39" Title="Factura" HorizontalTitleAlignment="Center" VerticalTitleAlignment="Center" TitleFontSize="18" FontStyle="Italic"/>
+        <mah:Tile x:Name="tlReserva" Content="" HorizontalAlignment="Left" Margin="397,80,0,0" VerticalAlignment="Top" Height="75" Width="75" Background="#FFF56B39" Title="Reserva" Click="tlReserva_Click" HorizontalTitleAlignment="Center" VerticalTitleAlignment="Center" TitleFontSize="14" FontStyle="Italic"/>
+        <mah:Tile x:Name="tlMecanico" Content="" HorizontalAlignment="Left" Margin="397,160,0,0" VerticalAlignment="Top" Height="75" Width="75" Background="#FFF56B39" Title="Mecánico" HorizontalTitleAlignment="Center" VerticalTitleAlignment="Center" TitleFontSize="14" FontStyle="Italic"/>
+        <mah:Tile x:Name="tlTipoRubro" Content="" HorizontalAlignment="Left" Margin="397,240,0,0" VerticalAlignment="Top" Height="75" Width="75" Background="#FFF56B39" Title="Tipo Rubro" Click="tlTipoRubro_Click" FontStyle="Italic" TitleFontSize="14" VerticalTitleAlignment="Center" HorizontalTitleAlignment="Center"/>
+        <mah:Tile x:Name="tlDetallePedidoPro" Content="" HorizontalAlignment="Left" Margin="477,80,0,0" VerticalAlignment="Top" Height="75" Width="75" Background="#FFF56B39" Title="Detalle Pedido Producto" HorizontalTitleAlignment="Center" VerticalTitleAlignment="Center" Click="tlDetallePedidoPro_Click" TitleFontSize="14" FontStyle="Italic"/>
+        <mah:Tile x:Name="tlDetalleProductoServicio" Content="" Margin="477,160,0,0" VerticalAlignment="Top" Height="75" HorizontalAlignment="Left" Width="75" Background="#FFF56B39" HorizontalTitleAlignment="Center" VerticalTitleAlignment="Center" Title="Detalle Producto Servicio" TitleFontSize="14" Click="tlDetalleProductoServicio_Click"/>
+        <Label Content="Administracion" HorizontalAlignment="Left" Margin="77,10,0,0" VerticalAlignment="Top" Width="485" Height="55" HorizontalContentAlignment="Center" FontSize="36"/>
+        <mah:Tile HorizontalAlignment="Left" Margin="26,23,0,0" VerticalAlignment="Top" Height="30" Width="30" Background="White" BorderBrush="White" Click="Tile_Click">
+            <Image Height="25" Width="25" Source="/Serviexpress;component/Imagenes/atras.png"/>
+        </mah:Tile>
+
+    </Grid>
+</mah:MetroWindow>

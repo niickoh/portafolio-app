@@ -1,0 +1,25 @@
+﻿<mah:MetroWindow x:Class="Serviexpress.Vistas.TipoRubro.AdmTipoRubro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Serviexpress.Vistas.TipoRubro"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="AdmTipoRubro" Height="450" Width="397.938">
+    <Grid>
+        <TextBlock x:Name="ADMINISTRACIÓN_TIPO_RUBRO" HorizontalAlignment="Left" Margin="48,41,0,0" TextWrapping="Wrap" Text="ADMINISTRACIÓN TIPO RUBRO" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="btnBuscarTipoRubro" Content="BUSCAR" HorizontalAlignment="Left" Margin="274,145,0,0" VerticalAlignment="Top" Width="79" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.935,1.299" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}" Height="35" Click="btnBuscarTipoRubro_Click"/>
+        <DataGrid x:Name="dgTipoRubro" HorizontalAlignment="Left" Height="100" Margin="70,220,0,0" VerticalAlignment="Top" Width="283" FontFamily="Century Gothic" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="btnAgregarTipoRubro" Content="AGREGAR " HorizontalAlignment="Left" Margin="274,185,0,0" VerticalAlignment="Top" Width="79" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold" Height="30" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}" Click="btnAgregarTipoRubro_Click"/>
+        <Button x:Name="btnEditarTipoRubro" Content="EDITAR " HorizontalAlignment="Left" Margin="111,325,0,0" VerticalAlignment="Top" Width="84" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold" Height="30" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}" Click="btnEditarTipoRubro_Click"/>
+        <Button x:Name="btnEliminarTipoRubro" Content="ELIMINAR" HorizontalAlignment="Left" Margin="218,325,0,0" VerticalAlignment="Top" Width="80" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold" Height="30" RenderTransformOrigin="-0.735,1.765" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}" Click="btnEliminarTipoRubro_Click"/>
+        <TextBox x:Name="txtBuscarTipoRubro" HorizontalAlignment="Left" Height="29" Margin="80,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174"/>
+        <mah:Tile HorizontalAlignment="Left" Margin="13,10,0,0" VerticalAlignment="Top" Height="30" Width="30" Background="White" BorderBrush="White" Click="Tile_Click">
+            <Image Height="25" Width="25" Source="/Serviexpress;component/Imagenes/atras.png"/>
+        </mah:Tile>
+
+
+    </Grid>
+</mah:MetroWindow>

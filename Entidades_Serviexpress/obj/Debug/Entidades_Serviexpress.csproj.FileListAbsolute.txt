@@ -1,0 +1,7 @@
+C:\Users\nicol\source\repos\Serviexpress\Entidades_Serviexpress\bin\Debug\Entidades_Serviexpress.dll
+C:\Users\nicol\source\repos\Serviexpress\Entidades_Serviexpress\bin\Debug\Entidades_Serviexpress.pdb
+C:\Users\nicol\source\repos\Serviexpress\Entidades_Serviexpress\obj\Debug\Entidades_Serviexpress.csprojAssemblyReference.cache
+C:\Users\nicol\source\repos\Serviexpress\Entidades_Serviexpress\obj\Debug\Entidades_Serviexpress.csproj.CoreCompileInputs.cache
+C:\Users\nicol\source\repos\Serviexpress\Entidades_Serviexpress\obj\Debug\Entidades_Serviexpress.dll
+C:\Users\nicol\source\repos\Serviexpress\Entidades_Serviexpress\obj\Debug\Entidades_Serviexpress.pdb
+C:\Users\nicol\source\repos\Serviexpress\Entidades_Serviexpress\bin\Debug\Entidades_Serviexpress.dll.config

@@ -1,0 +1,20 @@
+﻿<mah:MetroWindow x:Class="Serviexpress.Vistas.Servicios.eliminarServicios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Serviexpress.Vistas.Servicios"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="eliminarServicios" Height="315.625" Width="356.979">
+    <Grid>
+        <Label x:Name="lblEliminarServicios" Content="Eliminar Servicios" HorizontalAlignment="Left" Margin="43,10,0,0" VerticalAlignment="Top" Width="250" FontSize="30" FontStyle="Italic" FontWeight="SemiBold" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lblInstrucciones" Content="Seleccione un ID para eliminar..." HorizontalAlignment="Left" Margin="43,79,0,0" VerticalAlignment="Top" Width="187"/>
+        <Label x:Name="lblEliminarID" Content="ID" HorizontalAlignment="Left" Margin="43,135,0,0" VerticalAlignment="Top" Width="95"/>
+        <ComboBox x:Name="cmbEliminarIDServicios" HorizontalAlignment="Left" Margin="143,135,0,0" VerticalAlignment="Top" Width="123" Height="26"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="218,214,0,0" VerticalAlignment="Top" Width="75" Height="29" Click="btnEliminar_Click"/>
+        <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="115,214,0,0" VerticalAlignment="Top" Width="75" Height="29" Click="btnSalir_Click"/>
+
+    </Grid>
+</mah:MetroWindow>

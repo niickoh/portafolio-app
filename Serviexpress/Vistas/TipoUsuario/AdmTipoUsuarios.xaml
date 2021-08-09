@@ -1,0 +1,24 @@
+﻿<mah:MetroWindow x:Class="Serviexpress.Vistas.TipoUsuario.AdmTipoUsuarios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Serviexpress.Vistas.TipoUsuario"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="AdmTipoUsuarios" Height="479.207" Width="344.591">
+    <Grid>
+        <DataGrid x:Name="dgTipoUsuarios" Height="163" Margin="75,207,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="190"/>
+        <Label x:Name="lblAdmTipoUsuario" Content="Administración de &#xD;&#xA;Tipos de Usuarios" Margin="75,10,0,0" VerticalAlignment="Top" FontSize="20" Height="66" HorizontalAlignment="Left" Width="190" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontStyle="Italic" FontWeight="SemiBold"/>
+        <Button x:Name="btnBuscarTipoUsuario" Content="Buscar" HorizontalAlignment="Left" Margin="167,176,0,0" VerticalAlignment="Top" Width="98" Height="26" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}" Click="btnBuscarTipoUsuario_Click"/>
+        <TextBox x:Name="txtBuscarTipoUsuario" HorizontalAlignment="Left" Height="26" Margin="75,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <Button x:Name="btnAgregarTipoUsuario" Content="Agregar" HorizontalAlignment="Left" Margin="75,176,0,0" VerticalAlignment="Top" Width="87" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}" Click="btnAgregarTipoUsuario_Click" Height="26"/>
+        <Button x:Name="btnModificarTipoUsuario" Content="Editar" HorizontalAlignment="Left" Margin="96,375,0,0" VerticalAlignment="Top" Width="66" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}" Click="btnModificarTipoUsuario_Click"/>
+        <Button x:Name="btnEliminarTipoUsuario" Content="Eliminar" HorizontalAlignment="Left" Margin="167,375,0,0" VerticalAlignment="Top" Width="66" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}" Click="btnEliminarTipoUsuario_Click"/>
+        <mah:Tile HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Height="30" Width="30" Background="White" BorderBrush="White" Click="Tile_Click">
+            <Image Height="25" Width="25" Source="/Serviexpress;component/Imagenes/atras.png"/>
+        </mah:Tile>
+
+    </Grid>
+</mah:MetroWindow>

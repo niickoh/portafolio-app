@@ -1,0 +1,27 @@
+﻿<mah:MetroWindow x:Class="Serviexpress.Vistas.RecepcionProducto.modificarRecepcionProducto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Serviexpress.Vistas.RecepcionProducto"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="modificarRecepcionProducto" Height="428.438" Width="468.125">
+    <Grid>
+        <Label x:Name="lblEditarRecepcionProducto" Content="Editar Recepción de Productos" HorizontalAlignment="Left" Margin="33,31,0,0" VerticalAlignment="Top" Width="427" Height="55" FontSize="30" FontStyle="Italic" FontWeight="SemiBold"/>
+        <Label x:Name="lblEditarFecha" Content="Fecha" HorizontalAlignment="Left" Margin="54,139,0,0" VerticalAlignment="Top" Width="99"/>
+        <DatePicker x:Name="dpEditarFecha" HorizontalAlignment="Left" Margin="208,139,0,0" VerticalAlignment="Top" Height="26" Width="127"/>
+        <TextBox x:Name="txtEditarValidador" HorizontalAlignment="Left" Height="23" Margin="208,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
+        <TextBox x:Name="txtEditarDescripcion" HorizontalAlignment="Left" Height="26" Margin="208,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
+        <Label x:Name="lblEditarValidador" Content="Validador" HorizontalAlignment="Left" Margin="54,184,0,0" VerticalAlignment="Top" Width="99" Height="23"/>
+        <Label x:Name="lblEditarDescripcion" Content="Descripción" HorizontalAlignment="Left" Margin="54,226,0,0" VerticalAlignment="Top" Width="99" Height="26"/>
+        <Label x:Name="lblEditarIDOrdenCompra" Content="ID Orden de Compra" HorizontalAlignment="Left" Margin="54,268,0,0" VerticalAlignment="Top" Width="124" Height="26"/>
+        <Button x:Name="btnEditarRecepcionProductos" Content="Editar" HorizontalAlignment="Left" Margin="326,324,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="btnEditarRecepcionProductos_Click"/>
+        <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="225,324,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="btnSalir_Click"/>
+        <ComboBox x:Name="cmbEditarIDOrdenCompra" HorizontalAlignment="Left" Margin="208,268,0,0" VerticalAlignment="Top" Width="127" Height="26"/>
+        <TextBox x:Name="txtEditarIDRecepcionProductos" HorizontalAlignment="Left" Height="26" Margin="208,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
+        <Label x:Name="lblEditarIDRecepcionProducto" Content="ID " HorizontalAlignment="Left" Margin="54,102,0,0" VerticalAlignment="Top" Width="99"/>
+
+    </Grid>
+</mah:MetroWindow>

@@ -1,0 +1,24 @@
+﻿<mah:MetroWindow x:Class="Serviexpress.Vistas.TipoServicio.AdmTipoServicio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Serviexpress.Vistas.TipoServicio"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="AdmTipoServicio" Height="414.375" Width="630.313">
+    <Grid>
+        <DataGrid x:Name="dgTipoServicios" HorizontalAlignment="Left" Height="221" Margin="10,120,0,0" VerticalAlignment="Top" Width="492"/>
+        <Label x:Name="lblAdmTipoServicio" Content="Administración Tipos de Servicios" HorizontalAlignment="Left" Margin="65,10,0,0" VerticalAlignment="Top" Width="492" Height="54" FontSize="30" FontStyle="Italic" FontWeight="SemiBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnAgregarTS" Content="Agregar" HorizontalAlignment="Left" Margin="519,120,0,0" VerticalAlignment="Top" Width="75" Height="29" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}" Click="btnAgregarTS_Click"/>
+        <Button x:Name="btnEditarTS" Content="Editar" HorizontalAlignment="Left" Margin="519,154,0,0" VerticalAlignment="Top" Width="75" Height="29" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}" Click="btnEditarTS_Click"/>
+        <Button x:Name="btnEliminarTS" Content="Eliminar" HorizontalAlignment="Left" Margin="519,188,0,0" VerticalAlignment="Top" Width="75" Height="29" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}" Click="btnEliminarTS_Click"/>
+        <Button x:Name="btnBuscarTS" Content="Buscar" HorizontalAlignment="Left" Margin="519,86,0,0" VerticalAlignment="Top" Width="75" Height="29" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}" Click="btnBuscarTS_Click"/>
+        <TextBox x:Name="txtBuscatTS" HorizontalAlignment="Left" Height="23" Margin="202,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+        <mah:Tile HorizontalAlignment="Left" Margin="26,23,0,0" VerticalAlignment="Top" Height="30" Width="30" Background="White" BorderBrush="White" Click="Tile_Click">
+            <Image Height="25" Width="25" Source="/Serviexpress;component/Imagenes/atras.png"/>
+        </mah:Tile>
+
+    </Grid>
+</mah:MetroWindow>

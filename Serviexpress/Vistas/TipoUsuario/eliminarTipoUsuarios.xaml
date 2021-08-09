@@ -1,0 +1,20 @@
+﻿<mah:MetroWindow x:Class="Serviexpress.Vistas.TipoUsuario.eliminarTipoUsuarios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Serviexpress.Vistas.TipoUsuario"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="eliminarTipoUsuarios" Height="311.776" Width="333.991">
+    <Grid>
+        <Label x:Name="lblEliminarTipoUsuario" Content="Eliminar Tipo de Usuario" Margin="28,25,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="288" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontStyle="Italic" FontWeight="SemiBold"/>
+        <Label x:Name="lblEliminarSubtitulo" Content="Seleccione un ID para eliminar..." HorizontalAlignment="Left" Margin="59,96,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblEliminarIDTipoUsuario" Content="ID" HorizontalAlignment="Left" Margin="43,143,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbIDTipoUsuario" HorizontalAlignment="Left" Margin="117,143,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Button x:Name="btnEliminarTipoUsuario" Content="Eliminar" HorizontalAlignment="Left" Margin="212,206,0,0" VerticalAlignment="Top" Width="75" Height="26" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}" Click="btnEliminarTipoUsuario_Click"/>
+        <Button x:Name="btnCancelarTipoUsuario" Content="Cancelar" HorizontalAlignment="Left" Margin="117,206,0,0" VerticalAlignment="Top" Width="75" Height="26" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}" Click="btnCancelarTipoUsuario_Click"/>
+
+    </Grid>
+</mah:MetroWindow>

@@ -1,0 +1,32 @@
+﻿<mah:MetroWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Serviexpress.Vistas.Administrador"
+        xmlns:controlzex="urn:controlzex" x:Class="Serviexpress.Vistas.Administrador.Administrador"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Administrador" Height="450" Width="448">
+    <Grid>
+        <mah:Tile x:Name="tlUsuarios" HorizontalAlignment="Left" Margin="92,115,0,0" VerticalAlignment="Top" Height="120" Width="120" Title="Recepcion de Productos" TitleFontSize="13" TiltFactor="1" Click="tlUsuarios_Click" Background="#FFF56B39">
+            <Image Height="42" Width="48" Source="/Serviexpress;component/Imagenes/Recepcion_productos.png" Stretch="Fill"/>
+        </mah:Tile>
+        <mah:Tile x:Name="tlProductos" HorizontalAlignment="Left" Margin="92,249,0,0" VerticalAlignment="Top" Height="120" Width="120" Background="#FFF56B39" Title="Administrar OC" TitleFontSize="13" Click="tlProductos_Click">
+            <Image Height="48" Width="66" Source="/Serviexpress;component/Imagenes/adm_productos.png"/>
+        </mah:Tile>
+        <mah:Tile x:Name="tlOrdenes" Margin="228,115,0,0" VerticalAlignment="Top" Height="120" Background="#FFF56B39" TitleFontSize="13" Title="Generar Boleta" HorizontalAlignment="Left" Width="120" Click="tlOrdenes_Click">
+            <Image Height="45" Width="44" Source="/Serviexpress;component/Imagenes/generar_boleta.png"/>
+        </mah:Tile>
+        <mah:Tile x:Name="tlReportes" Margin="228,249,0,0" VerticalAlignment="Top" Height="120" TitleFontSize="13" Background="#FFF56B39" Title="Reserva de Hora" HorizontalAlignment="Left" Width="120" Click="tlReportes_Click">
+            <Image Height="46" Width="61" Source="/Serviexpress;component/Imagenes/reserva_hora.png"/>
+        </mah:Tile>
+        <mah:Tile x:Name="tlAdministracion" Content="" HorizontalAlignment="Left" Margin="92,60,0,0" VerticalAlignment="Top" Width="256" Height="43" Title="Administación " Background="#FFF56B39" Click="tlAdministracion_Click"/>
+        <Label Content="Serviexpress" HorizontalAlignment="Left" Margin="92,0,0,0" VerticalAlignment="Top" Width="256" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="55" FontSize="36"/>
+        <mah:Tile HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="30" Width="30" Title="" Background="White" BorderBrush="White" Click="Tile_Click">
+            <Image Height="30" Width="30" Source="/Serviexpress;component/Imagenes/cerrar_sesion.png"/>
+        </mah:Tile>
+
+    </Grid>
+</mah:MetroWindow>

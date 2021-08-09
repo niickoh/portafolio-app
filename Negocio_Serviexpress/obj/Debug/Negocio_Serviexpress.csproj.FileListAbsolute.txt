@@ -1,0 +1,12 @@
+C:\Users\nicol\source\repos\Serviexpress\Negocio_Serviexpress\bin\Debug\Negocio_Serviexpress.dll
+C:\Users\nicol\source\repos\Serviexpress\Negocio_Serviexpress\bin\Debug\Negocio_Serviexpress.pdb
+C:\Users\nicol\source\repos\Serviexpress\Negocio_Serviexpress\bin\Debug\Datos_Serviexpress.dll
+C:\Users\nicol\source\repos\Serviexpress\Negocio_Serviexpress\bin\Debug\Entidades_Serviexpress.dll
+C:\Users\nicol\source\repos\Serviexpress\Negocio_Serviexpress\bin\Debug\Datos_Serviexpress.pdb
+C:\Users\nicol\source\repos\Serviexpress\Negocio_Serviexpress\bin\Debug\Entidades_Serviexpress.pdb
+C:\Users\nicol\source\repos\Serviexpress\Negocio_Serviexpress\obj\Debug\Negocio_Serviexpress.csprojAssemblyReference.cache
+C:\Users\nicol\source\repos\Serviexpress\Negocio_Serviexpress\obj\Debug\Negocio_Serviexpress.csproj.CoreCompileInputs.cache
+C:\Users\nicol\source\repos\Serviexpress\Negocio_Serviexpress\obj\Debug\Negocio_Serviexpress.csproj.CopyComplete
+C:\Users\nicol\source\repos\Serviexpress\Negocio_Serviexpress\obj\Debug\Negocio_Serviexpress.dll
+C:\Users\nicol\source\repos\Serviexpress\Negocio_Serviexpress\obj\Debug\Negocio_Serviexpress.pdb
+C:\Users\nicol\source\repos\Serviexpress\Negocio_Serviexpress\bin\Debug\Entidades_Serviexpress.dll.config

@@ -1,0 +1,38 @@
+﻿<mah:MetroWindow x:Class="Serviexpress.Vistas.Administrador.agregarUsuarios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Serviexpress.Vistas.Administrador"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="agregarUsuarios" Height="403" Width="627">
+    <Grid>
+        <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Height="23" Margin="424,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtContrasena" HorizontalAlignment="Left" Height="23" Margin="135,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCorreo" HorizontalAlignment="Left" Height="23" Margin="135,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPnombre" HorizontalAlignment="Left" Height="25" Margin="135,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtSnombre" HorizontalAlignment="Left" Height="25" Margin="424,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtApaterno" HorizontalAlignment="Left" Height="23" Margin="135,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAmaterno" HorizontalAlignment="Left" Height="23" Margin="424,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtRut" HorizontalAlignment="Left" Height="25" Margin="135,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtDV" HorizontalAlignment="Left" Height="25" Margin="260,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="26"/>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="469,288,0,0" VerticalAlignment="Top" Width="75" Click="btnAgregar_Click_1" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}"/>
+        <DatePicker x:Name="dpFechaNac" HorizontalAlignment="Left" Margin="424,242,0,0" VerticalAlignment="Top" Height="23" Width="120"/>
+        <Label x:Name="lblRut" Content="Rut" HorizontalAlignment="Left" Margin="22,96,0,0" VerticalAlignment="Top" Height="25" Width="108" HorizontalContentAlignment="Right"/>
+        <Label x:Name="lblPNombre" Content="Primer Nombre" HorizontalAlignment="Left" Margin="19,126,0,0" VerticalAlignment="Top" Height="25" Width="111" HorizontalContentAlignment="Right"/>
+        <Label x:Name="lblSNombre" Content="Segundo Nombre" HorizontalAlignment="Left" Margin="299,126,0,0" VerticalAlignment="Top" Height="25" Width="120" HorizontalContentAlignment="Right"/>
+        <Label x:Name="lblAPaterno" Content="Apellido Paterno" HorizontalAlignment="Left" Margin="19,156,0,0" VerticalAlignment="Top" Height="25" Width="111" HorizontalContentAlignment="Right"/>
+        <Label x:Name="lblAMaterno" Content="Apellido Materno" HorizontalAlignment="Left" Margin="299,156,0,0" VerticalAlignment="Top" Height="25" Width="120" HorizontalContentAlignment="Right"/>
+        <Label x:Name="lblCorreo" Content="Correo" HorizontalAlignment="Left" Margin="19,186,0,0" VerticalAlignment="Top" Width="111" HorizontalContentAlignment="Right"/>
+        <Label x:Name="lblUsuario" Content="Usuario" HorizontalAlignment="Left" Margin="299,183,0,0" VerticalAlignment="Top" Width="120" HorizontalContentAlignment="Right"/>
+        <Label x:Name="lblContrasena" Content="Contraseña" HorizontalAlignment="Left" Margin="22,211,0,0" VerticalAlignment="Top" Width="108" HorizontalContentAlignment="Right"/>
+        <Label x:Name="lblTipo" Content="Tipo Usuario" HorizontalAlignment="Left" Margin="19,242,0,0" VerticalAlignment="Top" Width="108" HorizontalContentAlignment="Right" Height="23"/>
+        <Label x:Name="lblFechaNac" Content="Fecha Nacimiento" HorizontalAlignment="Left" Margin="311,242,0,0" VerticalAlignment="Top" Width="108" HorizontalContentAlignment="Right" Height="23"/>
+        <ComboBox x:Name="cmbTipoUsuario" HorizontalAlignment="Left" Margin="135,242,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Creación de Usuarios" HorizontalAlignment="Left" Margin="135,10,0,0" VerticalAlignment="Top" Width="391" HorizontalContentAlignment="Center" Height="58" FontSize="36"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="370,288,0,0" VerticalAlignment="Top" Width="75" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}" Click="btnCancelar_Click_1" />
+
+    </Grid>
+</mah:MetroWindow>

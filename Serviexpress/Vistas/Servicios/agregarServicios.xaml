@@ -1,0 +1,25 @@
+﻿<mah:MetroWindow x:Class="Serviexpress.Vistas.Servicios.agregarServicios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Serviexpress.Vistas.Servicios"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="agregarServicios" Height="416.458" Width="356.979">
+    <Grid>
+        <Label x:Name="lblAgregarServicios" Content="Agregar Servicios" HorizontalAlignment="Left" Margin="54,36,0,0" VerticalAlignment="Top" Width="250" FontSize="30" FontStyle="Italic" FontWeight="SemiBold"/>
+        <Label x:Name="lblFechaServicios" Content="Fecha " HorizontalAlignment="Left" Margin="54,124,0,0" VerticalAlignment="Top" Width="101"/>
+        <Label x:Name="lblIDReservaHora" Content="ID Reserva" HorizontalAlignment="Left" Margin="54,214,0,0" VerticalAlignment="Top" Width="101"/>
+        <Label x:Name="lblValidado" Content="Validado?" HorizontalAlignment="Left" Margin="54,170,0,0" VerticalAlignment="Top" Width="101"/>
+        <Label x:Name="lblComentario" Content="Comentario" HorizontalAlignment="Left" Margin="54,258,0,0" VerticalAlignment="Top" Width="101"/>
+        <TextBox x:Name="txtIDReserva" HorizontalAlignment="Left" Height="26" Margin="160,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtComentario" HorizontalAlignment="Left" Height="26" Margin="160,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnAgregarServicios" Content="Agregar" HorizontalAlignment="Left" Margin="229,304,0,0" VerticalAlignment="Top" Width="75" Height="28" Click="btnAgregarServicios_Click"/>
+        <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="132,304,0,0" VerticalAlignment="Top" Width="74" Height="28" Click="btnSalir_Click"/>
+        <DatePicker x:Name="dpFecha" HorizontalAlignment="Left" Margin="155,124,0,0" VerticalAlignment="Top" Height="26" Width="125"/>
+        <TextBox x:Name="txtValidado" HorizontalAlignment="Left" Height="26" Margin="160,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</mah:MetroWindow>

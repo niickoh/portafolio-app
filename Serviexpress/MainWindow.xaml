@@ -1,0 +1,21 @@
+﻿<mah:MetroWindow x:Class="Serviexpress.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:Serviexpress"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Serviexpress" Height="500" Width="400">
+    <Grid>
+        <TextBox x:Name="txtUsuario" Height="33" Margin="70,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="253" mah:TextBoxHelper.Watermark="Ingrese Usuario" mah:TextBoxHelper.ClearTextButton="True"/>
+        <PasswordBox x:Name="pbContrasena" HorizontalAlignment="Left" Margin="70,281,0,0" VerticalAlignment="Top" Width="253" Height="33" mah:TextBoxHelper.Watermark="Ingrese Contraseña" mah:TextBoxHelper.ClearTextButton="True"/>
+        <Button x:Name="btnIngresar"  Content="Ingresar" HorizontalAlignment="Left" Margin="70,331,0,0" VerticalAlignment="Top" Width="253" Height="33" Click="btnIngresar_Click" Style="{mah:StaticResource MahApps.Styles.Button.MetroSquare.Accent}"/>
+        <Image HorizontalAlignment="Left" Height="33" Margin="28,230,0,0" VerticalAlignment="Top" Width="37" Source="Imagenes/login1.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="33" Margin="28,281,0,0" VerticalAlignment="Top" Width="37" Source="Imagenes/login2.png" Stretch="Fill"/>
+        <Image Height="142" Margin="70,83,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="253" Source="Imagenes/logo_serviexpress.png" Stretch="UniformToFill"/>
+        <Label Content="  Sistema Gestor &#xD;&#xA;&#xD;&#xA;  &quot;Serviexpress&quot;" Margin="99,19,101,0" VerticalAlignment="Top" Height="96" FontWeight="Bold" FontStyle="Oblique" FontFamily="Comic Sans MS" FontSize="18"/>
+
+    </Grid>
+</mah:MetroWindow>
